@@ -1,0 +1,37 @@
+<!-- 
+* In Angular, data binding is a powerful feature that allows you to bind 
+your application data to the DOM, making it dynamic. There are several types of data binding:
+
+1. Interpolation: Uses {{ }} to display a component's property in the view.
+<p>{{ propertyName }}</p>
+
+2. Property Binding: Binds a property of a DOM element to a property of the component.
+<img [src]="imageUrl">
+
+3. Event Binding: Listens for certain events (like clicks, hover, etc.) 
+and calls a method on the component when the event is triggered.
+
+<button (click)="handleClick()">Click me</button>
+
+4. Two-way Binding: Combines property and event binding. 
+Any change in the application data reflects in the view and any change in the view 
+instantly reflects in the application data.
+
+You typically see this with forms. You use the [(ngModel)] 
+directive (from FormsModule) to achieve this.
+
+<input [(ngModel)]="username">
+ -->
+
+<h1>Interpolation</h1>
+{{interpolation}}
+
+<h1>Property Binding</h1>
+<img [src]="imageUrl" />
+
+<h1>Event Binding</h1>
+<button (click)="handleEventBinding()">Click Me</button>
+
+<h1>Two Way Binding</h1>
+<input [(ngModel)]="inputValue">
+<p>You typed: {{ inputValue }}</p>

@@ -1,2 +1,8 @@
-<h1>Learning {{title}}</h1>
-<app-home></app-home>
+<div class="content-wrapper">
+    <nav>
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+        <a routerLink="/data-binding" routerLinkActive="active">Data Binding</a>
+        <a routerLink="/data-sharing" routerLinkActive="active">Data Sharing</a>
+    </nav>
+    <router-outlet></router-outlet>
+</div>

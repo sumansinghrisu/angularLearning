@@ -1,0 +1,32 @@
+.content-wrapper {
+    display: flex;            /* Makes the content-wrapper a flex container */
+    align-items: flex-start;  /* Ensures the children start at the top */
+}
+
+nav {
+    border: 1px solid;       /* As per your earlier requirement */
+    padding: 10px;           /* Optional padding for visual spacing inside the nav */
+    margin-right: 20px;      /* Spacing between nav and router-outlet */
+    width: 250px;
+}
+
+nav a {
+    display: block;          /* Display each link on its own line */
+    margin-bottom: 10px;     /* Space between links */
+    text-decoration: none;   /* Remove underline from links */
+    color: inherit;          /* Use the inherited color */
+    font-size: 18px;         /* Font size as per your earlier requirement */
+    font-weight: 500;        /* Font weight as per your earlier requirement */
+    border-bottom: 1px solid gray; 
+}
+
+
+/* Remove margin for the last link to prevent extra space at the bottom */
+nav a:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+nav a.active {
+    color: blue;  
+}
+
